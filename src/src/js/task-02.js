@@ -6,3 +6,11 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const menuEl = document.querySelector('#ingredients');
+ingredients.forEach(function (ingredient) {
+  const listEl = document.createElement('li');
+  listEl.classList.add('item');
+  listEl.textContent = `${ingredient}`;
+  menuEl.appendChild(listEl);
+});

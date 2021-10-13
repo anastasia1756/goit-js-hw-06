@@ -22,3 +22,17 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+img {
+  max-width:50%;
+  object-fit: contain;
+}
+.list-item {
+display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.img {
+}
