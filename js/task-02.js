@@ -12,5 +12,5 @@ ingredients.forEach(function (ingredient) {
   const listEl = document.createElement('li');
   listEl.classList.add('item');
   listEl.textContent = `${ingredient}`;
-  menuEl.appendChild(listEl);
+  menuEl.append(listEl);
 });

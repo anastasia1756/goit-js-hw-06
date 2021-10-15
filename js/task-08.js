@@ -5,15 +5,18 @@ formEl.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
 
-  const {
-    elements: { email, password }
-  } = event.currentTarget;
+  const email = event.currentTarget.elements.email.value;
+  const password = event.currentTarget.elements.password.value;
+  const elements = {
+      email: email,
+      password: password,
+  }
 
-  if (email.value === "" || password.value === "") {
+  if (email === "" || password === "") {
     return alert('Все поля должны быть заполнены');
   }
 
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  console.log(elements);
   event.currentTarget.reset();
 }
 
